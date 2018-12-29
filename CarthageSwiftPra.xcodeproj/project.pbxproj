@@ -14,6 +14,7 @@
 		B5E2C0BE21D7B7DD00E14620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E2C0BC21D7B7DD00E14620 /* LaunchScreen.storyboard */; };
 		B5E2C0C921D7B7DD00E14620 /* CarthageSwiftPraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2C0C821D7B7DD00E14620 /* CarthageSwiftPraTests.swift */; };
 		B5E2C0D421D7B7DD00E14620 /* CarthageSwiftPraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2C0D321D7B7DD00E14620 /* CarthageSwiftPraUITests.swift */; };
+		B5E2C0E321D7BBFB00E14620 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E2C0E221D7BBFB00E14620 /* SVProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B5E2C0CF21D7B7DD00E14620 /* CarthageSwiftPraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageSwiftPraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E2C0D321D7B7DD00E14620 /* CarthageSwiftPraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageSwiftPraUITests.swift; sourceTree = "<group>"; };
 		B5E2C0D521D7B7DD00E14620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E2C0E221D7BBFB00E14620 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E2C0E321D7BBFB00E14620 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				B5E2C0C721D7B7DD00E14620 /* CarthageSwiftPraTests */,
 				B5E2C0D221D7B7DD00E14620 /* CarthageSwiftPraUITests */,
 				B5E2C0B121D7B7D700E14620 /* Products */,
+				B5E2C0E121D7BBFA00E14620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 			path = CarthageSwiftPraUITests;
 			sourceTree = "<group>";
 		};
+		B5E2C0E121D7BBFA00E14620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2C0E221D7BBFB00E14620 /* SVProgressHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +147,7 @@
 				B5E2C0AC21D7B7D700E14620 /* Sources */,
 				B5E2C0AD21D7B7D700E14620 /* Frameworks */,
 				B5E2C0AE21D7B7D700E14620 /* Resources */,
+				B5E2C0E421D7BC2000E14620 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +263,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5E2C0E421D7BC2000E14620 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5E2C0AC21D7B7D700E14620 /* Sources */ = {
@@ -434,6 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZ3TA3Z547;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageSwiftPra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +490,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SZ3TA3Z547;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageSwiftPra/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
