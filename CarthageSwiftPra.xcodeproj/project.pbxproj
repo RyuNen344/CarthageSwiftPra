@@ -77,6 +77,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B511980721D7FBC200526D49 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2C0BC21D7B7DD00E14620 /* LaunchScreen.storyboard */,
+				B5E2C0B721D7B7D700E14620 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		B511980821D7FBCF00526D49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B5E2C0A721D7B7D700E14620 = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +119,9 @@
 			children = (
 				B5E2C0B321D7B7D700E14620 /* AppDelegate.swift */,
 				B5E2C0B521D7B7D700E14620 /* ViewController.swift */,
-				B5E2C0B721D7B7D700E14620 /* Main.storyboard */,
+				B511980821D7FBCF00526D49 /* Controller */,
+				B511980721D7FBC200526D49 /* StoryBoard */,
 				B5E2C0BA21D7B7DD00E14620 /* Assets.xcassets */,
-				B5E2C0BC21D7B7DD00E14620 /* LaunchScreen.storyboard */,
 				B5E2C0BF21D7B7DD00E14620 /* Info.plist */,
 			);
 			path = CarthageSwiftPra;
