@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarthageSwiftPra" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Main" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -22,9 +22,6 @@
                                 <rect key="frame" x="164" y="148" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="JO1-u7-YuW" kind="presentation" id="LYN-cy-xZJ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-FR-ESS">
                                 <rect key="frame" x="164" y="197" width="46" height="30"/>
@@ -37,57 +34,13 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Item" width="188" id="1JK-Yk-Ho2"/>
-                        <barButtonItem title="Item" width="258" id="ouV-Ny-UQ1">
-                            <connections>
-                                <segue destination="h9Q-xE-ujG" kind="presentation" id="hNw-Sq-7JO"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem title="Item" width="258" id="ouV-Ny-UQ1"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="81" y="243"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ceh-T6-WHJ">
-            <objects>
-                <viewController id="JO1-u7-YuW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hf0-MT-U5H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VCU-Um-2K7">
-                                <rect key="frame" x="71" y="320" width="233" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YET-4K-v12"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n93-Me-wLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1671" y="242"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iq9-E1-3u8">
-            <objects>
-                <viewController id="h9Q-xE-ujG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8ZK-Oj-wAU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="CUB-b0-Gj1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kx1-K8-hJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1670" y="1012"/>
         </scene>
     </scenes>
 </document>
